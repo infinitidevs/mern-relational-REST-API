@@ -34,6 +34,27 @@ const main = async () => {
     })
   );
   console.log('>> Updated Routines in DB');
+
+  await Exercise.updateMany(
+    {},
+    {
+      $unset: {
+        _exerciseid: 1,
+        _routine: 1
+      }
+    }
+  );
+
+  await Routine.updateMany(
+    {},
+    {
+      $unset: {
+        _routineid: 1,
+        _exercises: 1
+      }
+    }
+  );
+  console.log('>> Deleted private fields');
 };
 
 main()
