@@ -95,7 +95,7 @@ const updateRoutineFromExercise = async (req, res, next) => {
 const deleteExercise = async (req, res, next) => {
   try {
     const { id } = req.params;
-    const exercise = await Exercise.findByIdAndDelete(id);
+    await Exercise.findByIdAndDelete(id);
     res.status(200).json({ data: 'OK' });
   } catch (err) {
     return next(setError(404, "Can't delete exercise"));
