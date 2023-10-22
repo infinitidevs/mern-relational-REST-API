@@ -1,4 +1,4 @@
-# REST API for Workout Routines using MongoDB, Express & NodeJS
+# REST API for Workout Routines using MongoDB, Express & NodeJS | <a href="https://mern-rel-model.vercel.app/api" style="color:#2f81f7" target="_blank">Browse API!</a>
 
 ## Populate the seed
 
@@ -57,7 +57,7 @@ The JSON Data that the API for /routines is gonna return has the following forma
 
 ## Documentation for API Endpoints
 
-All URIs are relative to _https://localhost:4001/api_
+All URIs are relative to _https://localhost:4001/api_ or _https://mern-rel-model.vercel.app/api_
 
 | HTTP request                                   | Description                                                        |
 | ---------------------------------------------- | ------------------------------------------------------------------ |
