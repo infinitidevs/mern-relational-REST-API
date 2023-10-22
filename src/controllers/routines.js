@@ -116,7 +116,7 @@ const deleteRoutine = async (req, res, next) => {
   try {
     const { id } = req.params;
     const routine = await Routine.findByIdAndDelete(id);
-    res.status(200).json({ data: routine }); 
+    res.status(200).json({ data: 'OK' }); 
   } catch (err) {
     return next(setError(404, "Can't delete routine"));
   }

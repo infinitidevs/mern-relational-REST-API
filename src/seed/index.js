@@ -29,7 +29,6 @@ const main = async () => {
         const relatedExercise = exercises.find((exercise) => exercise._exerciseid === exerciseId);
         return relatedExercise._id;
       });
-
       await routine.updateOne({ exercises: dbExercises });
     })
   );

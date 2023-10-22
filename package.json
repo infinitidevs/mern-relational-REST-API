@@ -2,10 +2,11 @@
   "name": "mern-6",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "index.js",
   "scripts": {
     "start": "node .",
-    "dev": "node --watch ."
+    "dev": "node --watch .",
+    "seed": "node src/seed/index.js"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +14,7 @@
   "dependencies": {
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "express-rate-limit": "^7.1.1",
     "mongoose": "^7.6.1"
   },
   "devDependencies": {

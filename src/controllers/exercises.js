@@ -96,7 +96,7 @@ const deleteExercise = async (req, res, next) => {
   try {
     const { id } = req.params;
     const exercise = await Exercise.findByIdAndDelete(id);
-    res.status(200).json({ data: exercise });
+    res.status(200).json({ data: 'OK' });
   } catch (err) {
     return next(setError(404, "Can't delete exercise"));
   }

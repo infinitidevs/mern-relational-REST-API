@@ -5,7 +5,7 @@ mongoose.set('strictQuery', false);
 mongoose.set('strictPopulate', false);
 
 mongoose
-  .connect(process.env.MONGO_URL)
+  .connect(process.env.DB_URL)
   .then(() => {
     console.log('>> Connected to DB!');
   })
